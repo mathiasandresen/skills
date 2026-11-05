@@ -12,7 +12,7 @@ npx skills add mathiasandresen/skills
 
 Pick the skills and agents in the prompt. To install a single skill, add `--skill trivy-fix`.
 
-Manually: copy or symlink a skill's folder into `~/.claude/skills/` (all projects) or `<project>/.claude/skills/` (one project).
+Manually: copy or symlink a skill's folder from `skills/` into `~/.claude/skills/` (all projects) or `<project>/.claude/skills/` (one project).
 
 ## trivy-fix
 
