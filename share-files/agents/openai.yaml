@@ -1,0 +1,4 @@
+interface:
+  display_name: "Share files"
+  short_description: "Exchange files through your configured Copyparty folder"
+  default_prompt: "Use $share-files to exchange files with me through my configured Copyparty folder."

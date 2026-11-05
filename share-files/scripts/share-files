@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+skill_scripts=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+helper="${XDG_CACHE_HOME:-$HOME/.cache}/share-files/share-files"
+if [ ! -x "$helper" ] || [ "$skill_scripts/share-files.swift" -nt "$helper" ] || [ "$skill_scripts/build.sh" -nt "$helper" ]; then
+  sh "$skill_scripts/build.sh"
+fi
+exec "$helper" "$@"
