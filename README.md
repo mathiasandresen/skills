@@ -27,3 +27,9 @@ Runs trivy, fixes what it flags, and reports what needs a decision. Detects the 
 Upload and download requested files through a locally configured Copyparty folder. Requires macOS and Xcode Command Line Tools. Server URLs belong in `~/.config/share-files/config.json`; credentials stay in macOS Keychain. No server or credentials are bundled.
 
 Install with `npx skills add mathiasandresen/skills --skill share-files`. Run `sh tests/share-files.sh` on macOS to validate configuration and URL boundaries without network or Keychain access.
+
+## claude-design-import
+
+Import a Claude Design artifact that Codex cannot access through a Claude Haiku subagent in T3 Code. Exports HTML, assets, or screenshots into the current checkout for implementation reference. Stops when Claude delegation or artifact access is unavailable.
+
+Install with `npx skills add mathiasandresen/skills --skill claude-design-import`.
