@@ -33,3 +33,12 @@ Install with `npx skills add mathiasandresen/skills --skill share-files`. Run `s
 Import a Claude Design artifact that Codex cannot access through a Claude Haiku subagent in T3 Code. Exports HTML, assets, or screenshots into the current checkout for implementation reference. Stops when Claude delegation or artifact access is unavailable.
 
 Install with `npx skills add mathiasandresen/skills --skill claude-design-import`.
+
+## spec-to-prs
+
+Lands a spec's tickets as small reviewable PRs into one integration branch, behind a single draft PR. Fans unblocked tickets out to parallel implementers, never merges for you, and resumes from tracker and PR state on re-run.
+
+- Requires a repo set up with `/setup-matt-pocock-skills` (it reads `docs/agents/issue-tracker.md`) and a tracker with PRs.
+- Uses the `tdd`, `pr` and `code-review` skills.
+
+Install with `npx skills add mathiasandresen/skills --skill spec-to-prs`.
