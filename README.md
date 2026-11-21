@@ -14,6 +14,12 @@ Pick the skills and agents in the prompt. To install a single skill, add `--skil
 
 Manually: copy or symlink a skill's folder from `skills/` into `~/.claude/skills/` (all projects) or `<project>/.claude/skills/` (one project).
 
+## gh-attach-screenshots
+
+Uploads local screenshots to GitHub issues, pull requests, and comments using `gh --attach`. Covers appending screenshots and placing them inline in Markdown.
+
+Install with `npx skills add mathiasandresen/skills --skill gh-attach-screenshots`.
+
 ## trivy-fix
 
 Runs trivy, fixes what it flags, and reports what needs a decision. Detects the project's own trivy setup (scan script, ignorefile, test command), so it needs no configuration.
